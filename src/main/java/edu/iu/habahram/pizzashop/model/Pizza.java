@@ -15,7 +15,7 @@ public abstract class Pizza {
     abstract void prepare();
 
     void bake() {
-        state.append("Baked for 25 minutes at 350");
+        state.append("Baked for 26 minutes at 350");
         state.append("\n");
     }
 
