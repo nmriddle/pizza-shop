@@ -9,5 +9,7 @@ public interface PizzaIngredientFactory {
 	public Pepperoni createPepperoni();
 	public Clams createClam();
 	public Spice createSpice();
+
+	public Topping createTopping();
  
 }

@@ -11,6 +11,8 @@ public abstract class Pizza {
     Clams clam;
     Spice spice;
 
+    Topping topping;
+
     StringBuffer state = new StringBuffer();
 
     abstract void prepare();
@@ -72,6 +74,10 @@ public abstract class Pizza {
         }
         if (spice != null) {
             result.append(spice);
+            result.append("\n");
+        }
+        if (topping != null) {
+            result.append(topping);
             result.append("\n");
         }
         return result.toString() + state.toString();

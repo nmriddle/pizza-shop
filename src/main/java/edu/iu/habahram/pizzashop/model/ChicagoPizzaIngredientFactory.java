@@ -34,4 +34,9 @@ public class ChicagoPizzaIngredientFactory
     public Spice createSpice() {
         return new Oregano();
     }
+
+    @Override
+    public Topping createTopping() {
+        return new Parmesan();
+    }
 }

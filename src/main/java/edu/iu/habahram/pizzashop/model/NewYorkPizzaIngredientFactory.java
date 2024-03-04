@@ -40,4 +40,9 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory{
     public Spice createSpice() {
         return new Garlic();
     }
+
+    @Override
+    public Topping createTopping() {
+        return null;
+    }
 }
