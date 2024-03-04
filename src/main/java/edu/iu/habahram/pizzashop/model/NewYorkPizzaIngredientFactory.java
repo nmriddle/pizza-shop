@@ -18,7 +18,7 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory{
 
     @Override
     public Veggies[] createVeggies() {
-        Veggies veggies[] = { new Garlic(),
+        Veggies veggies[] = {
                 new RedPeppers(),
                 new Mushrooms(),
                 new Onions()
@@ -34,5 +34,10 @@ public class NewYorkPizzaIngredientFactory implements PizzaIngredientFactory{
     @Override
     public Clams createClam() {
         return new FreshClams();
+    }
+
+    @Override
+    public Spice createSpice() {
+        return new Garlic();
     }
 }

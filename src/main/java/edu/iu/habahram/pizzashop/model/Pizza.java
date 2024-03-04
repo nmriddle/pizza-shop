@@ -9,6 +9,7 @@ public abstract class Pizza {
     Cheese cheese;
     Pepperoni pepperoni;
     Clams clam;
+    Spice spice;
 
     StringBuffer state = new StringBuffer();
 
@@ -29,12 +30,12 @@ public abstract class Pizza {
         state.append("\n");
     }
 
-    void setName(String name) {
-        this.name = name;
-    }
-
     String getName() {
         return name;
+    }
+
+    void setName(String name) {
+        this.name = name;
     }
 
     public String toString() {
@@ -55,7 +56,7 @@ public abstract class Pizza {
         if (veggies != null) {
             for (int i = 0; i < veggies.length; i++) {
                 result.append(veggies[i]);
-                if (i < veggies.length-1) {
+                if (i < veggies.length - 1) {
                     result.append(", ");
                 }
             }
@@ -67,6 +68,10 @@ public abstract class Pizza {
         }
         if (pepperoni != null) {
             result.append(pepperoni);
+            result.append("\n");
+        }
+        if (spice != null) {
+            result.append(spice);
             result.append("\n");
         }
         return result.toString() + state.toString();
